@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Ensures the body takes full viewport height */
+}
+
+/* Main Container */
+.app-container {
+  flex: 1;
+  /* Pushes the footer to the bottom when content is less */
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Search Input */
+input {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #444;
+  background: #222;
+  color: white;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #61dafb;
+  box-shadow: 0 0 10px rgba(97, 218, 251, 0.5);
+}
+
+/* Model List */
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  cursor: pointer;
+  padding: 12px 20px;
+  margin: 10px;
+  background: #252525;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  min-width: 180px;
+  text-align: center;
+}
+
+li:hover {
+  background: #444;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Model Viewer Container */
+.model-container {
+  margin-top: 20px;
+  padding: 20px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Description */
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #bbbbbb;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 15px;
+  background: #1a1a1a;
+  font-size: 0.9rem;
+  color: #cccccc;
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: auto;
+  /* Pushes footer to the bottom */
+}
+
+.footer a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  input {
+    width: 90%;
+  }
+
+  li {
+    font-size: 1rem;
+    padding: 10px 15px;
+    min-width: 140px;
+  }
+
+  .model-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+}
